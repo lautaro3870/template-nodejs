@@ -1,15 +1,19 @@
 // mailer.js
 const nodemailer = require("nodemailer");
+require('dotenv').config();
 
 const transporter = nodemailer.createTransport({
   host: "smtp.gmail.com",
   port: 587,
   secure: false, // upgrade later with STARTTLS
   auth: {
-    user: process.env.MAIL,
-    pass: process.env.PASSWORD,
+    user: "lautarodisbro@gmail.com",
+    pass: "wjkdepirvsvudity",
   },
 });
+
+//rffpyenwxaorehzi
+
 
 function enviarCorreo(destinatario, asunto, mensaje) {
   const mailOptions = {
