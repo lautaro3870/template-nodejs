@@ -15,7 +15,7 @@ const port = process.env.PORT ?? 3000;
 
 app.use(express.static("public"));
 
-cron.schedule("7 22 * * *", () => {
+cron.schedule("12 12 * * *", () => {
   console.log("Envio programado");
   const destinatario = "lautarodisbro@gmail.com"; // Cambiar por el correo del destinatario
   const asunto = "Correo automático semanal";
